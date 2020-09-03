@@ -3,8 +3,7 @@
 
 $(document).ready(function() {
 r = function() {
-$('.img-15').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/001p-2880.jpg' : 'images/001p-1920.jpg') : 'images/001p-960.jpg');
-$('.img-16').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/madewithsparkle-570.png' : 'images/madewithsparkle-380.png') : 'images/madewithsparkle-190.png');};
+$('.img-10').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/madewithsparkle-570.png' : 'images/madewithsparkle-380.png') : 'images/madewithsparkle-190.png');};
 $(window).resize(r);
 r();
 
