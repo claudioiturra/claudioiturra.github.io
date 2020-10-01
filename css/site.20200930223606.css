@@ -1,5 +1,6 @@
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=text]{border: solid thin #ddd}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto;border-color:#ddd}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/* patterns from subtlepatterns.com */
 body {
 	font-size: 0px;
 }
@@ -52,11 +53,11 @@ a {
 	word-spacing: -1px;
 }
 #body {
-	background-color: rgb(255,255,255);
+	background: rgb(255,255,255) url(../images/geometry2.png) repeat center top;
 }
 .section {
 	position: relative;
-	margin-top: 75px;
+	margin-top: 60px;
 	min-width: 960px;
 	width: 960px;
 	margin-left: auto;
@@ -66,26 +67,22 @@ a {
 .cont {
 	display: inline-block;
 	vertical-align: top;
-	min-width: 86px;
-	width: 86px;
-	min-height: 82px;
+	min-width: 124px;
+	width: 124px;
+	min-height: 86px;
 	position: relative;
-	z-index: 1;
-	margin-left: 436px;
+	margin-left: 417px;
 	margin-top: 0px;
-	height: 82px;
-}
-.anchor {
-	display: block;
-	width: 86px;
+	height: 86px;
 }
 .img {
 	position: absolute;
-	left: 2px;
+	left: 19px;
 	width: 82px;
 	height: 82px;
 	top: 0;
-	border-radius: 41px;
+	border-radius: 43px;
+	border: rgb(38,139,210) solid 2px;
 }
 .cont-2 {
 	display: inline-block;
@@ -94,9 +91,9 @@ a {
 	width: 342px;
 	min-height: 34px;
 	position: relative;
-	z-index: 2;
-	margin-left: -213px;
-	margin-top: 105px;
+	z-index: 1;
+	margin-left: -232px;
+	margin-top: 120px;
 }
 .button {
 	width: 340px;
@@ -136,7 +133,7 @@ a {
 	width: 342px;
 	min-height: 34px;
 	position: relative;
-	z-index: 3;
+	z-index: 2;
 	margin-left: 308px;
 	margin-top: 13px;
 }
@@ -178,7 +175,7 @@ a {
 	width: 342px;
 	min-height: 34px;
 	position: relative;
-	z-index: 4;
+	z-index: 3;
 	margin-left: 308px;
 	margin-top: 15px;
 }
@@ -220,7 +217,7 @@ a {
 	width: 342px;
 	min-height: 34px;
 	position: relative;
-	z-index: 5;
+	z-index: 4;
 	margin-left: 309px;
 	margin-top: 16px;
 }
@@ -262,7 +259,7 @@ a {
 	width: 342px;
 	min-height: 34px;
 	position: relative;
-	z-index: 6;
+	z-index: 5;
 	margin-left: 309px;
 	margin-top: 18px;
 }
@@ -304,7 +301,7 @@ a {
 	width: 342px;
 	min-height: 34px;
 	position: relative;
-	z-index: 7;
+	z-index: 6;
 	margin-left: 308px;
 	margin-top: 13px;
 }
@@ -346,8 +343,8 @@ a {
 	width: 342px;
 	min-height: 34px;
 	position: relative;
-	z-index: 8;
-	margin-left: 308px;
+	z-index: 7;
+	margin-left: 309px;
 	margin-top: 13px;
 }
 .button-7 {
@@ -388,7 +385,7 @@ a {
 	width: 342px;
 	min-height: 34px;
 	position: relative;
-	z-index: 9;
+	z-index: 8;
 	margin-left: 309px;
 	margin-top: 13px;
 }
@@ -428,9 +425,8 @@ a {
 	vertical-align: top;
 	min-width: 960px;
 	width: 960px;
-	min-height: 145px;
+	min-height: 127px;
 	position: relative;
-	z-index: 13;
 	margin-left: 0px;
 	margin-top: 18px;
 	overflow: visible;
@@ -531,7 +527,7 @@ a {
 	min-height: 99px;
 	position: relative;
 	margin-left: 311px;
-	margin-top: -1px;
+	margin-top: 17px;
 }
 .colwrapper {
 	display: inline-block;
@@ -551,7 +547,7 @@ a {
 	width: 121px;
 	min-height: 97px;
 	position: relative;
-	z-index: 11;
+	z-index: 10;
 	margin-left: 0px;
 	margin-top: 0px;
 	height: 97px;
@@ -581,7 +577,7 @@ a {
 	width: 95px;
 	min-height: 99px;
 	position: relative;
-	z-index: 12;
+	z-index: 11;
 	margin-left: 0px;
 	margin-top: 0px;
 	height: 99px;
@@ -612,7 +608,7 @@ a {
 	width: 125px;
 	min-height: 97px;
 	position: relative;
-	z-index: 10;
+	z-index: 9;
 	margin-left: 0px;
 	margin-top: 0px;
 	height: 97px;
@@ -633,10 +629,10 @@ a {
 	position: relative;
 	z-index: 14;
 	margin-left: -650px;
-	margin-top: 136px;
+	margin-top: 154px;
 	height: 50px;
 }
-.anchor-2 {
+.anchor {
 	display: block;
 	width: 190px;
 }
@@ -699,7 +695,7 @@ a {
 	word-spacing: -1px;
 }
 #body-2 {
-	background-color: rgb(255,255,255);
+	background: rgb(255,255,255) url(../images/geometry2.png) repeat center top;
 }
 .section-2 {
 	position: relative;
@@ -796,7 +792,7 @@ a {
 	margin-top: 0px;
 	height: 50px;
 }
-.anchor-3 {
+.anchor-2 {
 	display: block;
 	width: 190px;
 }
@@ -1001,7 +997,7 @@ a {
 	word-spacing: -1px;
 }
 #body-3 {
-	background-color: rgb(255,255,255);
+	background: rgb(255,255,255) url(../images/geometry2.png) repeat center top;
 }
 .section-3 {
 	position: relative;
@@ -1045,7 +1041,7 @@ a {
 	margin-top: 0px;
 	height: 50px;
 }
-.anchor-4 {
+.anchor-3 {
 	display: block;
 	width: 190px;
 }
