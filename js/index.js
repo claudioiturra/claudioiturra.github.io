@@ -5,7 +5,7 @@ $(document).ready(function() {
 r = function() {
 $('.img').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/madewithsparkle-570.png' : 'images/madewithsparkle-380.png') : 'images/madewithsparkle-190.png');
 $('.img-2').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/1449284-246.jpg' : 'images/1449284-164.jpg') : 'images/1449284-82.jpg');
-$('.img-3').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/claudio-2880.jpg' : 'images/claudio-1920.jpg') : 'images/claudio-960.jpg');};
+$('.img-3').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/claudio-2406.jpg' : 'images/claudio-1604.jpg') : 'images/claudio-802.jpg');};
 $(window).resize(r);
 r();
 

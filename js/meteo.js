@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
 r = function() {
-$('.img-4').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/madewithsparkle-570-2.png' : 'images/madewithsparkle-380-2.png') : 'images/madewithsparkle-190-2.png');
+$('.img-4').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/madewithsparkle-570.png' : 'images/madewithsparkle-380.png') : 'images/madewithsparkle-190.png');
 $('.img-5').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/pasted-image-255.png' : 'images/pasted-image-170.png') : 'images/pasted-image-85.png');
 $('.img-6').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/anid_rojo_azul-279.png' : 'images/anid_rojo_azul-186.png') : 'images/anid_rojo_azul-93.png');
 $('.img-7').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/logolab-291.png' : 'images/logolab-194.png') : 'images/logolab-97.png');};
