@@ -95,7 +95,7 @@ a {
 	position: relative;
 	z-index: 3;
 	margin-left: 418px;
-	margin-top: -17px;
+	margin-top: 34px;
 	height: 86px;
 }
 .img-2 {
@@ -131,32 +131,13 @@ a {
 .cont-4 {
 	display: inline-block;
 	vertical-align: top;
-	min-width: 960px;
-	width: 960px;
-	min-height: 545px;
-	position: relative;
-	z-index: 2;
-	margin-left: 0px;
-	margin-top: 0px;
-	height: 545px;
-}
-.img-3 {
-	position: absolute;
-	left: 0;
-	width: 960px;
-	height: 545px;
-	top: 0;
-}
-.cont-5 {
-	display: inline-block;
-	vertical-align: top;
 	min-width: 383px;
 	width: 383px;
 	min-height: 127px;
 	position: relative;
 	z-index: 4;
 	margin-left: 0px;
-	margin-top: -530px;
+	margin-top: 0px;
 	overflow: visible;
 }
 .para {
@@ -244,8 +225,27 @@ a {
 	line-height: 18.11pt;
 	letter-spacing: normal;
 }
-.cont-6 {
+.cont-5 {
 	overflow: hidden;
+}
+.cont-6 {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 960px;
+	width: 960px;
+	min-height: 545px;
+	position: relative;
+	z-index: 2;
+	margin-left: 0px;
+	margin-top: -127px;
+	height: 545px;
+}
+.img-3 {
+	position: absolute;
+	left: 0;
+	width: 960px;
+	height: 545px;
+	top: 0;
 }
 .cont-7 {
 	display: inline-block;
@@ -255,8 +255,8 @@ a {
 	min-height: 34px;
 	position: relative;
 	z-index: 5;
-	margin-left: -339px;
-	margin-top: -389px;
+	margin-left: 44px;
+	margin-top: -404px;
 }
 .button {
 	width: 293px;
@@ -298,7 +298,7 @@ a {
 	position: relative;
 	z-index: 6;
 	margin-left: -295px;
-	margin-top: -337px;
+	margin-top: -352px;
 }
 .button-2 {
 	width: 293px;
@@ -340,7 +340,7 @@ a {
 	position: relative;
 	z-index: 7;
 	margin-left: -295px;
-	margin-top: -282px;
+	margin-top: -297px;
 }
 .button-3 {
 	width: 293px;
@@ -382,7 +382,7 @@ a {
 	position: relative;
 	z-index: 8;
 	margin-left: -295px;
-	margin-top: -233px;
+	margin-top: -248px;
 }
 .button-4 {
 	width: 293px;
@@ -424,7 +424,7 @@ a {
 	position: relative;
 	z-index: 9;
 	margin-left: -295px;
-	margin-top: -179px;
+	margin-top: -194px;
 }
 .button-5 {
 	width: 293px;
@@ -466,7 +466,7 @@ a {
 	position: relative;
 	z-index: 10;
 	margin-left: -295px;
-	margin-top: -129px;
+	margin-top: -144px;
 }
 .button-6 {
 	width: 293px;
@@ -508,7 +508,7 @@ a {
 	position: relative;
 	z-index: 12;
 	margin-left: -295px;
-	margin-top: -81px;
+	margin-top: -96px;
 }
 .button-7 {
 	width: 293px;
