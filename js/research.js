@@ -3,7 +3,8 @@
 
 $(document).ready(function() {
 r = function() {
-$('.img-10').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/madewithsparkle-570.png' : 'images/madewithsparkle-380.png') : 'images/madewithsparkle-190.png');};
+$('.img-8').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/madewithsparkle-570.png' : 'images/madewithsparkle-380.png') : 'images/madewithsparkle-190.png');
+$('.img-9').attr('src', (window.devicePixelRatio > 1) ? ((window.devicePixelRatio > 2) ? 'images/screen-shot-2020-11-14-at-9.19.40-pm-498.png' : 'images/screen-shot-2020-11-14-at-9.19.40-pm-332.png') : 'images/screen-shot-2020-11-14-at-9.19.40-pm-166.png');};
 $(window).resize(r);
 r();
 
