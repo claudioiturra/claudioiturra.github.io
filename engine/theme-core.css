@@ -1,0 +1,429 @@
+/******************************************************************************/
+/* Fonts import */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/material-icons.woff2) format('woff2');
+}
+
+/******************************************************************************/
+/* General */
+.reveal .slides {
+  overflow: hidden !important;
+}
+
+.reveal .backgrounds {
+  box-sizing: border-box;
+  left: 50% !important;
+  top: 50% !important;
+  bottom: auto;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+/******************************************************************************/
+/* Typography */
+.reveal strong {
+  font-weight: 700;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+/******************************************************************************/
+/* Material Icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.material-icons.xs {
+  font-size: 0.5em;
+}
+
+.material-icons.s {
+  font-size: 0.8em;
+}
+
+.material-icons.m {
+  font-size: 1em;
+}
+
+.material-icons.l {
+  font-size: 2em;
+}
+
+.material-icons.xl {
+  font-size: 4em;
+}
+
+.material-icons.xxl {
+  font-size: 8em;
+}
+
+/******************************************************************************/
+/* Footnotes */
+
+.reveal .footnotes {
+  bottom: 0px;
+  position: absolute;
+  border-top: 1px solid #666;
+  padding-top: 3px;
+}
+
+.reveal .footnotes p{
+    display: inline-block;
+}
+
+.reveal .footnotes:empty {
+  display: none;
+}
+
+.reveal .footnotes ol {
+  list-style: decimal;
+}
+
+.reveal .footnotes li {
+  display: list-item;
+  list-style-position: inside;
+}
+
+.reveal .footnote-backref {
+  display: none;
+}
+
+/******************************************************************************/
+/* Diagrams */
+
+.link {
+  fill: none;
+  stroke-width: 3px;
+}
+
+.node {
+  cursor: default;
+}
+
+.node text {
+  font: 18px sans-serif;
+  font-weight: bold;
+}
+
+.box {
+  stroke-width: 4;
+}
+
+.column p:only-child {
+  margin: -0.6em;
+}
+
+.reveal .column .svg-container p:only-child {
+  margin: 0;
+}
+
+.reveal table {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/******************************************************************************/
+/*  Youtube videos & local videos */
+
+.reveal video {
+  max-width: 100%;
+  max-height: 100%;
+  height: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.reveal .videoWrapper {
+  height: 700px;
+  width: 1244px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.videoWrapper {
+  position: relative;
+}
+
+.reveal .videoWrapper>img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videoWrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playButton {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background:
+    url(data:image/png;base64,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);
+}
+
+/******************************************************************************/
+/* figures & SVG */
+
+p img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+figure {
+  text-align: center;
+}
+
+foreignObject {
+  overflow: visible;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+}
+
+.reveal .deviceblock .insideblock {
+  font-size: 32px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.reveal .svg-graph .diagramblock .insideblock {
+  flex: 1 1 auto;
+  border-radius: 7px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.insideblock p:only-child,
+.column p:only-child {
+  flex: 1 1 auto;
+}
+
+.insideblock p:only-child img:only-child,
+.column p:only-child img:only-child {
+  object-fit: cover;
+}
+
+
+.reveal p img[src*="#contain"] {
+    object-fit: contain!important;
+}
+
+
+
+/***************************************************************************/
+/* SVG containers   */
+.svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 25em;
+}
+
+.svg-container svg {
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/*******************************
+SVG diagrams
+*/
+.svg-graph {
+  max-width: 100%;
+}
+
+/******************************
+   SVG icons*/
+.reveal .svgicon {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke-width: 2px;
+}
+.bb .domain {
+    fill: none;
+}
+
+
+/***************************************************************************/
+/* Slide Fit */
+.slide-fit-container {
+  padding: 1em;
+  display: flex;
+  flex-grow: 1;
+}
+
+/**************************************************************************
+  Auto-fill & Equal height === */
+.grid {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  clear: both;
+  width: 100%
+}
+
+.grid:before {
+  content: "";
+  display: table;
+}
+
+.grid:after {
+  clear: both;
+}
+
+.grid>.column {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex: auto;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.grid.vertical-align .column {
+  justify-content: center;
+}
+
+.grid>.column {
+  width: 10%;
+}
+
+/**************************************************************************
+  Flexblocks */
+.flexblock {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  clear: both;
+}
+
+.flexblock:before {
+  content: "";
+  display: table;
+}
+
+.flexblock:after {
+  clear: both;
+}
+
+.flexblock li,
+.flexblock.blink li>a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 2.4rem;
+}
+
+.flexblock li {
+  flex: auto;
+  text-align: left;
+  width: 100%;
+}
+
+.flexblock.aligncenter li {
+  text-align: center;
+}
+
+.flexblock.vertical-align li {
+  justify-content: center;
+}
+
+.flexblock.blink li {
+  padding: 0;
+}
+
+.flexblock li {
+  width: 50%;
+}
+
+.flexblock li {
+  width: 25%;
+}
+
+/***************************************************************************/
+/* 2 x 2 Grid */
+.grid2x2 {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid2x2>div {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid2x2>div>div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.equal,
+.equal>div[class*='col-'] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 0 auto;
+}
