@@ -14605,7 +14605,26 @@ claudioiturra@oceanografia.udec.cl<br>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-matlab"><pre><span></span><span class="n">m_proj</span><span class="p">(</span><span class="s">&#39;ortho&#39;</span><span class="p">,</span><span class="s">&#39;lat&#39;</span><span class="p">,</span><span class="o">-</span><span class="mi">36</span><span class="o">&#39;</span><span class="p">,</span><span class="s">&#39;long&#39;</span><span class="p">,</span><span class="o">-</span><span class="mi">75</span><span class="o">&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="n">m_coast</span><span class="p">(</span><span class="s">&#39;patch&#39;</span><span class="p">,</span><span class="s">&#39;b&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="n">m_grid</span><span class="p">(</span><span class="s">&#39;linest&#39;</span><span class="p">,</span><span class="s">&#39;-&#39;</span><span class="p">,</span><span class="s">&#39;xticklabels&#39;</span><span class="p">,[],</span><span class="s">&#39;yticklabels&#39;</span><span class="p">,[]);</span><span class="w"></span>
+<span class="n">message</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">sprintf</span><span class="p">(</span><span class="s">&#39;Curso ADJM\nBienvenidos a\nConcepción, Chile&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="nb">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="n">message</span><span class="p">,</span><span class="s">&#39;fontsize&#39;</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;r&#39;</span><span class="p">,</span><span class="k">...</span><span class="w"></span>
+<span class="w">    </span><span class="s">&#39;verticalalignment&#39;</span><span class="p">,</span><span class="s">&#39;middle&#39;</span><span class="p">,</span><span class="s">&#39;horizontalalignment&#39;</span><span class="p">,</span><span class="s">&#39;center&#39;</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
 
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
@@ -14794,7 +14813,39 @@ sudo -E env "PATH=$PATH" jupyter-nbextension install rise --py</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-matlab"><pre><span></span><span class="c">% Test 001</span><span class="w"></span>
+
+<span class="nb">load</span><span class="w"> </span><span class="n">m1244</span><span class="w"></span>
+<span class="n">use</span><span class="w"> </span><span class="s">m1244</span><span class="w"></span>
+<span class="n">dt</span><span class="p">=</span><span class="n">num</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="n">num</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w">          </span><span class="c">%Sample rate in days</span><span class="w"></span>
+<span class="n">cv</span><span class="p">=</span><span class="n">cv</span><span class="p">(:,</span><span class="mi">4</span><span class="p">);</span><span class="n">cv</span><span class="p">=</span><span class="n">cv</span><span class="o">-</span><span class="nb">mean</span><span class="p">(</span><span class="n">cv</span><span class="p">);</span><span class="w"></span>
+<span class="p">[</span><span class="n">psio</span><span class="p">,</span><span class="n">lambda</span><span class="p">]=</span><span class="n">sleptap</span><span class="p">(</span><span class="nb">length</span><span class="p">(</span><span class="n">cv</span><span class="p">),</span><span class="mi">16</span><span class="p">);</span><span class="w"></span>
+<span class="p">[</span><span class="n">f</span><span class="p">,</span><span class="n">spp</span><span class="p">,</span><span class="n">snn</span><span class="p">,</span><span class="n">spn</span><span class="p">]=</span><span class="n">mspec</span><span class="p">(</span><span class="n">dt</span><span class="p">,</span><span class="n">cv</span><span class="p">,</span><span class="n">psio</span><span class="p">,</span><span class="s">&#39;cyclic&#39;</span><span class="p">);</span><span class="w">  </span>
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="nb">plot</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">snn</span><span class="p">),</span><span class="n">flipx</span><span class="w"></span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s">&#39;Negative Frequency (cycles/day)&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="nb">plot</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">spp</span><span class="p">)</span><span class="w"></span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s">&#39;Positive Frequency  (cycles/day)&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">for</span><span class="w"> </span><span class="nb">i</span><span class="p">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="w"></span>
+<span class="w">    </span><span class="nb">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="nb">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">xlog</span><span class="p">,</span><span class="n">ylog</span><span class="p">,</span><span class="nb">axis</span><span class="w"> </span><span class="n">tight</span><span class="p">,</span><span class="n">ax</span><span class="p">=</span><span class="nb">axis</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">vlines</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="s">&#39;k:&#39;</span><span class="p">),</span><span class="n">vlines</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span><span class="s">&#39;C&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
+<span class="nb">set</span><span class="p">(</span><span class="nb">gcf</span><span class="p">,</span><span class="s">&#39;paperposition&#39;</span><span class="p">,[</span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">11</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="p">])</span><span class="w"></span>
+<span class="n">packfig</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s">&#39;columns&#39;</span><span class="p">)</span><span class="w"> </span><span class="c">%pack the column subplots together</span><span class="w"></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
 
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
@@ -14838,7 +14889,21 @@ class="
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-matlab"><pre><span></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
 
 </div>
 </body>
